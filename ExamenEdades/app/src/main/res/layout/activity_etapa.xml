@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Etapa">
+
+    <TextView
+        android:id="@+id/txtNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre"
+        android:textSize="16sp"
+        android:textColor="#444444"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="32dp" />
+
+    <TextView
+        android:id="@+id/VNombre"
+        android:layout_below="@id/txtNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:layout_marginTop="4dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="32dp" />
+
+    <TextView
+        android:id="@+id/txtFecha"
+        android:layout_below="@id/VNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha de Nacimiento:"
+        android:textSize="16sp"
+        android:textColor="#444444"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="32dp" />
+
+    <TextView
+        android:id="@+id/VFecha"
+        android:layout_below="@id/txtFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:layout_marginTop="4dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="32dp" />
+
+    <!-- Edad -->
+    <TextView
+        android:id="@+id/txtEdad"
+        android:layout_below="@id/VFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edad:"
+        android:textSize="16sp"
+        android:textColor="#444444"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="32dp" />
+
+    <TextView
+        android:id="@+id/VEdad"
+        android:layout_below="@id/txtEdad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:layout_marginTop="4dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="32dp" />
+
+    <!-- Sexo -->
+    <TextView
+        android:id="@+id/txtSexo"
+        android:layout_below="@id/VEdad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sexo:"
+        android:textSize="16sp"
+        android:textColor="#444444"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="32dp" />
+
+    <TextView
+        android:id="@+id/VSex"
+        android:layout_below="@id/txtSexo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:layout_marginTop="4dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="32dp" />
+
+    <!-- Etapa de vida -->
+    <TextView
+        android:id="@+id/txtEtapa"
+        android:layout_below="@id/VSex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Etapa:"
+        android:textSize="16sp"
+        android:textColor="#444444"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="32dp" />
+
+    <TextView
+        android:id="@+id/VEtapa"
+        android:layout_below="@id/txtEtapa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:layout_marginTop="4dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="32dp" />
+
+    <!-- Botón Volver -->
+    <Button
+        android:id="@+id/BVolver"
+        android:layout_below="@id/VEtapa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:padding="12dp"
+        android:backgroundTint="#6200EE"
+        android:textColor="#FFFFFF"
+        android:text="Volver" />
+
+</RelativeLayout>
