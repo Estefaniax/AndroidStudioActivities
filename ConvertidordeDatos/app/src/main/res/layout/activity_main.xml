@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtValor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="100dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black"
+        android:text="Ingresa el valor a convertir"/>
+
+    <EditText
+        android:id="@+id/Valor"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@+id/txtValor"
+        android:layout_marginTop="10dp"
+        android:textColorHint="#F0E8E8"
+        android:textSize="16dp"
+        android:fontFamily="sans-serif-black"
+        android:hint="Ej: 2.5"
+        android:inputType="numberDecimal"/>
+
+    <TextView
+        android:id="@+id/txtOrigen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Valor"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black"
+        android:text="Seleccione unidad origen"/>
+
+    <Spinner
+        android:id="@+id/Origen"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/txtOrigen"/>
+
+    <TextView
+        android:id="@+id/txtDestino"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Origen"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black"
+        android:text="Seleccione unidad destino"/>
+
+    <Spinner
+        android:id="@+id/Destino"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/txtDestino"/>
+
+    <Button
+        android:id="@+id/btnConvertir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130dp"
+        android:layout_below="@+id/Destino"
+        android:layout_marginTop="20dp"
+        android:text="Convertir"/>
+
+
+    <TextView
+        android:id="@+id/Resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="50dp"
+        android:textSize="30dp"
+        android:text="0000"
+        android:textStyle="bold"
+        android:textColor="@color/design_default_color_error"
+        android:fontFamily="sans-serif-black"
+        android:layout_below="@+id/btnConvertir"/>
+
+</RelativeLayout>
