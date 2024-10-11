@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#a18599"
+    tools:context=".CaloriasActivity">
+
+    <!-- Nombre, Edad, Sexo -->
+    <TextView
+        android:id="@+id/textViewNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre:"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/textViewEdad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edad:"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/textViewNombre"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/textViewSexo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sexo:"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/textViewEdad"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Peso -->
+    <EditText
+        android:id="@+id/editTextPeso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Peso (Kg)"
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/textViewSexo"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:backgroundTint="#FFFFFF"/>
+
+    <!-- Estatura -->
+    <EditText
+        android:id="@+id/editTextEstatura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Estatura (cm)"
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/editTextPeso"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:backgroundTint="#FFFFFF"/>
+
+    <!-- Botón para calcular -->
+    <Button
+        android:id="@+id/BTNCalcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular"
+        android:backgroundTint="#544753"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/editTextEstatura"
+        android:layout_marginTop="30dp"/>
+
+    <!-- Resultado -->
+    <TextView
+        android:id="@+id/textViewResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resultado:"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/BTNCalcular"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Botón para regresar -->
+    <Button
+        android:id="@+id/BTNSalir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Salir"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#544753"
+        android:layout_below="@id/textViewResultado"
+        android:layout_marginTop="30dp"/>
+</RelativeLayout>

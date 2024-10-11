@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#a18599"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:fontFamily="sans-serif"
+        android:textSize="36sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="150dp"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:padding="20dp">
+
+        <EditText
+            android:id="@+id/usuario"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Usuario"
+            android:backgroundTint="#FFFFFF"
+            android:textColorHint="#C0ADC1"
+            android:textColor="#6A1B4D"
+            android:padding="12dp"
+            android:background="@android:drawable/editbox_background_normal"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginHorizontal="20dp"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Contraseña"
+            android:backgroundTint="#FFFFFF"
+            android:textColorHint="#C0ADC1"
+            android:textColor="#6A1B4D"
+            android:padding="12dp"
+            android:layout_marginBottom="25dp"
+            android:background="@android:drawable/editbox_background_normal"/>
+
+        <Button
+            android:id="@+id/ingresar"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Ingresar"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#544753"
+            android:elevation="6dp"
+            android:padding="12dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#a18599"
+    tools:context=".BostonActivity">
+
+    <TextView
+        android:id="@+id/textNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre: "
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:id="@+id/textEdad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edad: "
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/textNombre"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/textSexo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sexo: "
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/textEdad"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tiempo requerido"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/textSexo"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"/>
+
+    <Button
+        android:id="@+id/BTNTiempoRequerido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular"
+        android:backgroundTint="#544753"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/textSexo"
+        android:layout_marginTop="60dp"/>
+
+    <TextView
+        android:id="@+id/textResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/BTNTiempoRequerido"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/BTNSalir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Salir"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#544753"
+        android:layout_below="@id/textResultado"
+        android:layout_marginTop="30dp"/>
+</RelativeLayout>
