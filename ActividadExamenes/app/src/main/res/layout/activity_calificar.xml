@@ -1,0 +1,115 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFFFFF"
+    tools:context=".ActivityCalificar">
+
+    <TextView
+        android:id="@+id/titleCalificacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resultados de Calificación"
+        android:textColor="#1C160C"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/textViewNombreLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre:"
+        android:textColor="#1C160C"
+        android:textSize="18sp"
+        android:layout_below="@id/titleCalificacion"
+        android:layout_marginTop="32dp" />
+
+    <TextView
+        android:id="@+id/textViewNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="--"
+        android:textColor="#1C160C"
+        android:textSize="18sp"
+        android:layout_below="@id/textViewNombreLabel"
+        android:layout_marginStart="8dp" />
+
+    <TextView
+        android:id="@+id/textViewMateriaLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Materia:"
+        android:textColor="#1C160C"
+        android:textSize="18sp"
+        android:layout_below="@id/textViewNombreLabel"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/textViewMateria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="--"
+        android:textColor="#1C160C"
+        android:textSize="18sp"
+        android:layout_below="@id/textViewMateriaLabel"
+        android:layout_marginStart="8dp" />
+
+    <TextView
+        android:id="@+id/textViewCalificacionLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calificación:"
+        android:textColor="#1C160C"
+        android:textSize="18sp"
+        android:layout_below="@id/textViewMateriaLabel"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/textViewCalificacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="--"
+        android:textColor="#1C160C"
+        android:textSize="18sp"
+        android:layout_below="@id/textViewCalificacionLabel"
+        android:layout_marginStart="8dp" />
+
+    <TextView
+        android:id="@+id/textViewEstadoLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estado:"
+        android:textColor="#1C160C"
+        android:textSize="18sp"
+        android:layout_below="@id/textViewCalificacionLabel"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/textViewEstado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="--"
+        android:textColor="#1C160C"
+        android:textSize="18sp"
+        android:layout_below="@id/textViewEstadoLabel"
+
+        android:layout_marginStart="8dp" />
+
+    <Button
+        android:id="@+id/btnVolverInicio"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Volver al Inicio"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:backgroundTint="#019863"
+        android:layout_below="@id/textViewEstadoLabel"
+        android:layout_marginTop="32dp" />
+
+</RelativeLayout>

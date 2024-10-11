@@ -1,0 +1,232 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFFFFF"
+    tools:context=".ActivityMate">
+
+    <TextView
+        android:id="@+id/titleMatematicas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Preguntas de Ciencias Naturales"
+        android:textColor="#1C160C"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="80dp" />
+
+    <TextView
+        android:id="@+id/pregunta1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Cuál es el planeta más grande del sistema solar?"
+        android:textColor="#1C160C"
+        android:textSize="16sp"
+        android:layout_below="@id/titleMatematicas"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp" />
+
+    <RadioGroup
+        android:id="@+id/groupPregunta1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pregunta1"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp">
+
+        <RadioButton
+            android:id="@+id/rbPregunta1Opcion1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Marte"
+            android:textColor="#1C160C"
+            android:layout_marginRight="20dp"
+            android:buttonTint="#019863" />
+
+        <RadioButton
+            android:id="@+id/rbPregunta1Opcion2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Júpiter"
+            android:textColor="#1C160C"
+            android:buttonTint="#019863" />
+
+        <RadioButton
+            android:id="@+id/rbPregunta1Opcion3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saturno"
+            android:textColor="#1C160C"
+            android:layout_marginLeft="20dp"
+            android:buttonTint="#019863" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/pregunta2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Qué gas respiran las plantas para realizar la fotosíntesis?"
+        android:textColor="#1C160C"
+        android:textSize="16sp"
+        android:layout_below="@id/groupPregunta1"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp" />
+
+    <RadioGroup
+        android:id="@+id/groupPregunta2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pregunta2"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+
+        android:layout_marginTop="8dp">
+
+        <RadioButton
+            android:id="@+id/rbPregunta2Opcion1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Oxígeno"
+            android:textColor="#1C160C"
+            android:buttonTint="#019863" />
+
+        <RadioButton
+            android:id="@+id/rbPregunta2Opcion2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nitrógeno"
+            android:textColor="#1C160C"
+            android:layout_marginLeft="20dp"
+            android:buttonTint="#019863" />
+
+        <RadioButton
+            android:id="@+id/rbPregunta2Opcion3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dióxido de carbono"
+            android:textColor="#1C160C"
+            android:layout_marginLeft="20dp"
+            android:buttonTint="#019863" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/pregunta3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Cuál es la unidad básica de la materia?"
+        android:textColor="#1C160C"
+        android:textSize="16sp"
+        android:layout_below="@id/groupPregunta2"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp" />
+
+    <RadioGroup
+        android:id="@+id/groupPregunta3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pregunta3"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp">
+
+        <RadioButton
+            android:id="@+id/rbPregunta3Opcion1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Molécula"
+            android:textColor="#1C160C"
+            android:buttonTint="#019863" />
+
+        <RadioButton
+            android:id="@+id/rbPregunta3Opcion2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Átomo"
+            android:textColor="#1C160C"
+            android:layout_marginLeft="20dp"
+            android:buttonTint="#019863" />
+
+        <RadioButton
+            android:id="@+id/rbPregunta3Opcion3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Célula"
+            android:textColor="#1C160C"
+            android:layout_marginLeft="20dp"
+            android:buttonTint="#019863" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/pregunta4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Qué tipo de energía se produce por el movimiento de electrones?"
+        android:textColor="#1C160C"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:layout_below="@id/groupPregunta3"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp" />
+
+    <RadioGroup
+        android:id="@+id/groupPregunta4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pregunta4"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="8dp">
+
+        <RadioButton
+            android:id="@+id/rbPregunta4Opcion1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Térmica"
+            android:textColor="#1C160C"
+            android:buttonTint="#019863" />
+
+        <RadioButton
+            android:id="@+id/rbPregunta4Opcion2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Eléctrica"
+            android:textColor="#1C160C"
+            android:layout_marginLeft="20dp"
+            android:buttonTint="#019863" />
+
+        <RadioButton
+            android:id="@+id/rbPregunta4Opcion3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#019863"
+            android:text="Nuclear"
+            android:layout_marginLeft="20dp"
+            android:textColor="#1C160C" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnCalificar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Calificar"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:backgroundTint="#019863"
+        android:layout_below="@id/groupPregunta4"
+        android:layout_marginTop="30dp" />
+</RelativeLayout>

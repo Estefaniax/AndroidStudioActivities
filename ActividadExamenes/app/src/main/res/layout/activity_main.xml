@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selección de Examen"
+        android:textColor="#1C160C"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:paddingBottom="30dp"
+        android:paddingTop="8dp" />
+
+    <TextView
+        android:id="@+id/nombreLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre"
+        android:textColor="#1C160C"
+        android:textSize="16sp"
+        android:layout_below="@id/titleText"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/nombreInput"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/input_background"
+        android:layout_below="@id/nombreLabel"
+        android:padding="12dp"
+        android:textColor="#1C160C"
+        android:textSize="14sp"
+        android:hint="Ingresa tu nombre"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="25dp"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/examenLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Examen"
+        android:textColor="#1C160C"
+        android:textSize="16sp"
+        android:layout_below="@id/nombreInput" />
+
+
+    <RadioGroup
+        android:id="@+id/subjectRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/examenLabel"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="4dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radioMate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ciencias Naturales"
+            android:textColor="#1C160C"
+            android:textSize="14sp"
+            android:buttonTint="#019863" />
+
+        <RadioButton
+            android:id="@+id/radioEspanol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Español"
+            android:textColor="#1C160C"
+            android:textSize="14sp"
+            android:buttonTint="#019863"
+            android:layout_marginTop="8dp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Contestar"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:backgroundTint="#019863"
+        android:layout_below="@id/subjectRadioGroup"
+        android:layout_marginTop="80dp" />
+
+</RelativeLayout>
