@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f1f4"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convertidor de divisas"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#1b0d13"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="19dp"/>
+
+    <EditText
+        android:id="@+id/input_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Valor a convertir"
+        android:textColor="#CFE4689F"
+        android:background="@drawable/rounded_edittext_bg"
+        android:padding="16dp"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:inputType="numberDecimal"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/source_currency_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seleccione moneda origen"
+            android:textColor="#1b0d13"
+            android:textSize="16sp"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold"/>
+
+        <Spinner
+            android:id="@+id/source_currency_spinner"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:padding="9dp"
+            android:background="@drawable/rounded_spinner_bg"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/target_currency_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seleccione moneda destino"
+            android:textColor="#1b0d13"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/target_currency_spinner"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:padding="9dp"
+            android:background="@drawable/rounded_spinner_bg"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/convert_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Convertir"
+        android:textColor="#0B0000"
+        android:backgroundTint="#E0A2BC"
+        android:layout_marginTop="24dp"
+        android:padding="12dp" />
+
+    <TextView
+        android:id="@+id/result_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Resultado:  "
+        android:textColor="#1b0d13"
+        android:textSize="16sp"
+        android:layout_marginTop="30dp" />
+
+</LinearLayout>
