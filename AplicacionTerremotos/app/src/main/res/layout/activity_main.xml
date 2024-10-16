@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/spinner_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Últimos días:"
+            android:layout_marginEnd="8dp"/>
+
+        <Spinner
+            android:id="@+id/spinner_days"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <org.osmdroid.views.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/spinner_container" />
+
+    <LinearLayout
+        android:id="@+id/legend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:background="#80FFFFFF"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:layout_margin="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Magnitud"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp">
+            <View
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:background="@android:color/holo_green_light"
+                android:layout_marginEnd="4dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="&lt; 3.0" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp">
+            <View
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:background="@android:color/holo_orange_light"
+                android:layout_marginEnd="4dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3.0 - 3.9" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp">
+            <View
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:background="@android:color/holo_orange_dark"
+                android:layout_marginEnd="4dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.0 - 4.9" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp">
+            <View
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:background="@android:color/holo_red_light"
+                android:layout_marginEnd="4dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5.0 - 5.9" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp">
+            <View
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:background="@color/purple"
+                android:layout_marginEnd="4dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6.0 - 6.9" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp">
+            <View
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:background="@color/pink"
+                android:layout_marginEnd="4dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7.0 - 7.9" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp">
+            <View
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:background="@android:color/black"
+                android:layout_marginEnd="4dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="≥ 8.0" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

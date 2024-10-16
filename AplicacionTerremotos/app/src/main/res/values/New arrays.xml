@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="days_array">
+        <item>30 días</item>
+        <item>2 días</item>
+        <item>3 días</item>
+    </string-array>
+</resources>
