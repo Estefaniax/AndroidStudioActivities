@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Book Manager</string>
+
+    <string name="hint_book_title">Book Title</string>
+    <string name="hint_author">Author</string>
+    <string name="hint_publisher">Publisher</string>
+    <string name="hint_pages">Pages</string>
+    <string name="hint_isbn">ISBN-10</string>
+    <string name="hint_search">Search by title or author</string>
+
+    <string name="btn_save">Save</string>
+    <string name="btn_update">Update</string>
+    <string name="btn_delete">Delete</string>
+    <string name="btn_search">Search</string>
+
+    <string name="msg_book_saved">Book saved</string>
+    <string name="msg_book_updated">Book updated</string>
+    <string name="msg_book_deleted">Book deleted</string>
+    <string name="msg_select_book_update">Select a book to update</string>
+    <string name="msg_select_book_delete">Select a book to delete</string>
+    <string name="msg_save_error">Error saving book</string>
+    <string name="msg_update_error">Error updating book</string>
+    <string name="msg_delete_error">Error deleting book</string>
+</resources>
